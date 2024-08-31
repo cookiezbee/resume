@@ -7,90 +7,125 @@
     <meta name="keywords" content="eva, cv, resume">
     <meta name="description" content="Это сайт - резюме Евы Бодня">
     <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <img src="photo.jpg" width="200" alt="Eva's photo">
-    
-    <h1>Ева Бодня</h1>
+    <div class="container">
 
-    <p>Я студентка университета <strong>СибГУТИ</strong> и <strong>начинающий программист</strong>.</p>
+        <div class="info">
 
-    <p>Я люблю <em>готовить</em> и <em>программировать</em>.</p>
+            <img src="photo.jpg" alt="Eva's photo" class="avatar">
 
-    <h4><strong>Список социальный сетей:</strong></h4>
-
-    <a href="https://vk.com/baaabylove" target="_blank">Вконтакте</a> 
-    | 
-    <a href="https://t.me/baaabylove" target="_blank">Телеграм</a> 
-    | 
-    <a href="https://github.com/cookiezbee" target="_blank">GitHub</a>
-
-    <h2><strong>Мои хобби</strong></h2>
-
-    <ul>
-        <li>Рисовать</li>
-        <li>Готовить</li>
-        <li>Программировать</li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Школа №206</td>
-                <td>Ученица</td>
-                <td>2010 - 2019</td>
-            </tr>
-            <tr>
-                <td>Лицей НГТУ</td>
-                <td>Ученица</td>
-                <td>2019 - 2021</td>
-            </tr>
-            <tr>
-                <td>УРФУ</td>
-                <td>Студентка</td>
-                <td>2021 - 2023</td>
-            </tr>
-            <tr>
-                <td>СибГУТИ</td>
-                <td>Студентка</td>
-                <td>2023 - по н.вр.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-
-        <div>
-            <label for="name">Ваше имя: </label>
-            <input type="text" id="name" placeholder="Введите имя">
+            <div class="info-text">
+        
+                <h1>Ева Бодня</h1>
+            
+                <p>Я студентка университета <strong>СибГУТИ</strong> и <strong>начинающий программист</strong>.</p>
+            
+                <p>Я люблю <em>готовить</em> и <em>программировать</em>.</p>
+            
+                <h3><strong>Список социальный сетей:</strong></h3>
+            
+                <a href="https://vk.com/baaabylove" target="_blank">Вконтакте</a> 
+                | 
+                <a href="https://t.me/baaabylove" target="_blank">Телеграм</a> 
+                | 
+                <a href="https://github.com/cookiezbee" target="_blank">GitHub</a>
+            </div>
+        
         </div>
 
-        <div>
-            <label for="email">Ваш email: </label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-lightbrown">
+
+            <h2><strong>Мои хобби</strong></h2>
+
+            <ul class="list">
+                <li>Рисование</li>
+                <li>Математика</li>
+                <li>Программирование</li>
+                <li>3D-моделирование</li>
+            </ul>
+
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение: </label>
-            <br>
-            <textarea id="message" rows="5" cols="20" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-brown">
+
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Школа №206</td>
+                        <td>Ученица</td>
+                        <td>2010 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Лицей НГТУ</td>
+                        <td>Ученица</td>
+                        <td>2019 - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>УРФУ</td>
+                        <td>Студентка</td>
+                        <td>2021 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td>СибГУТИ</td>
+                        <td>Студентка</td>
+                        <td>2023 - по н.вр.</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
 
-            <input type="submit" name="Отправить">
+        <div class="card bg-darkbrown">
 
-    </form>
+            <h2>Мои курсы</h2>
+
+            <ol class="link-list">
+                <li><a href="https://wayup.in/ru" target="_blank">Веб-верстальщик: начало</a></li>
+                <li><a href="https://lk.result-university.com" target="_blank">Профессия Джуниор Frontend-разработчик</a></li>
+            </ol>
+
+        </div>
+
+        <form class="form">
+
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя: </label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email: </label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение: </label>
+                <textarea id="message" rows="5" cols="20" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+                <input class="btn" type="submit" name="Отправить">
+
+        </form>
+
+</div>
 
 </body>
 </html>
